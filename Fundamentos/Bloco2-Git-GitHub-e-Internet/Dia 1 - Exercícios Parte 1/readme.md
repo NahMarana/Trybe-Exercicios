@@ -12,5 +12,5 @@
  Comando `git add .` para adcionar os arquivos criados, em seguida fazer o commit desses arquivos - Comando `git commit -m "Criação de arquivos"`.
  
 ## 5º Enviar para repositório
- Caso já tenha criado um repositório é somente dar um `git push` e seus arquivos irá para o repositório do GitHub.
+ Caso já tenha criado um repositório é somente dar um `git push` e seus arquivos irão para o repositório do GitHub.
   
