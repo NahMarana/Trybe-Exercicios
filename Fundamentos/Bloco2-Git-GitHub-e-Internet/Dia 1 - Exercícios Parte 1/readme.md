@@ -3,7 +3,7 @@
  Comando `cat > trybe_skills.txt` e coloquei o conteudo indicado.
  
 ## 2º Verificar permissões
- Comando `ls -l` e aparecer dessa forma -rw-r-r-- rybe_skills.txt.
+ Comando `ls -l` e aparecer dessa forma -rw-r-r-- trybe_skills.txt.
  
 ## 3º Criar arquivo README
  Comando `touch readme.md` 
