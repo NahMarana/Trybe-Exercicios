@@ -1,45 +1,62 @@
-h1, p {
-    text-align: center;
+ol {
+    background-color: yellow;
 }
 
-li:hover {
-    background-color: cadetblue;
-}
-
-li:active {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-li {
-    list-style: none;
-}
-
-div:nth-of-type(1) {
-    color: blue;
-}
-
-div:nth-of-type(2) {
-    color: yellow;
-}
-
-div:nth-of-type(3) {
-    color: red;
-    font-size: 20px;
-}
-
-div:nth-of-type(4) {
+ol li:nth-child(2n) {
     color: green;
 }
 
-div:nth-of-type(5) {
-    color: grey;
+ol li:nth-child(2n+1) {
+   text-transform: uppercase;
 }
 
-div:nth-of-type(2n+1) {
-   font-style: italic;
+h1, h2 {
+    color: red;
+    font-size: 40px;
+    border: 1px solid black;
 }
 
-div:hover {
-    border: 2px solid black;
+li {
+    font-size: 20px;
 }
 
+ol li {
+    font-weight:bold;
+}
+
+ul li:nth-child(1) {
+    color: blue
+}
+
+ul li:nth-child(2) {
+    color: blue
+}
+
+ul li:nth-child(3) {
+    color: blue
+}
+
+.desenvolvedora:hover {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.desenvolvedora #stac {
+    color: orange;
+}
+
+.desenvolvedora #w3 {
+    color: green;
+}
+
+.desenvolvedora #mdn {
+    color: black;
+}
+
+.desenvolvedora #dev {
+    color: yellow;
+}
+
+.desenvolvedora #trybe {
+    color: green;
+}
