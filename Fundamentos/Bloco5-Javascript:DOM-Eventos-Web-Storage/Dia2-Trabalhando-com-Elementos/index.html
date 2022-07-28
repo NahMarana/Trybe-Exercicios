@@ -61,6 +61,14 @@
         
         // A partir desse filho criado, acesse terceiroFilho.
         document.getElementById("filhoPrimeiroFilhoDoFilho").parentElement.parentElement.nextElementSibling.nextElementSibling;
+
+        // Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+        let removeChildren = document.getElementById("pai");
+        for (let index of removeChildren.childNodes) {
+            if(index.id !== "elementoOndeVoceEsta" || index.id !== "primeiroFilhoDoFilho" ) {
+              index.remove();
+            }
+        }
       </script>
 </body>
 </html>
