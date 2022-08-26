@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <header>
+    <h2 id="page-title">Título</h2>
+    <p class="para" id="paragraph">Dê uma cor para este parágrafo!</p>
+    <h4 id="subtitle">Subtítulo</h4>
+    <p class="para" id="second-paragraph">Segundo parágrafo!</p>
+  </header>
+  <script>
+
+    const alteraTexto = document.getElementById('page-title');
+    alteraTexto.innerText = "Stranger Things";
+
+    const estilizaTexto = document.getElementById('paragraph');
+    estilizaTexto.style.border = '5px solid green';
+    estilizaTexto.style.backgroundColor = 'pink';
+    estilizaTexto.style.fontSize = "25px";
+
+    const alteraCor = document.getElementById('subtitle');
+    alteraCor.style.color = 'brown';
+    alteraCor.style.fontSize = '22px';
+
+    const alteraEstilo =  document.getElementsByClassName('para')[1];
+    alteraEstilo.style.color = 'white';
+    alteraEstilo.style.fontSize = '22px';
+    alteraEstilo.style.backgroundColor = 'purple';
+
+    const alteraCor2 = document.getElementsByTagName('h4')[0];
+    alteraCor2.style.backgroundColor = "orange";
+
+  </script>
+</body>
+
+</html>
