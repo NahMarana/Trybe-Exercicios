@@ -101,4 +101,30 @@ function alteraTexto(mudaTextoArray) {
 }
 let voltaSexta = [4, 11, 18, 25];
 alteraTexto(voltaSexta);
+
+function zoomDays() {
+    let zoom = document.querySelector('#days');
+    zoom.addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeight = '600';
+    });
+
+    days.addEventListener('mouseout', function(event) {
+      event.target.style.fontSize = '20px';
+      event.target.style.fontWeight = '200';
+    });
+  }
+  zoomDays();
+
+  function personalizarTarefa(tarefa) {
+    const tarefas = document.querySelector('.my-tasks');
+    let minhasTarefas = document.createElement('span');
+
+    minhasTarefas.innerText = tarefa;
+
+    tarefas.appendChild(minhasTarefas);
+  }
+  personalizarTarefa('Curso-Trybe');
+
+  
 // Escreva seu código abaixo.
