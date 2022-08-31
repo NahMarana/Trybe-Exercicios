@@ -51,10 +51,8 @@ diasDaSemana();
 function criaBotao(feriado) {
   const botao = document.querySelector(".buttons-container");
   let novoBotao = document.createElement("button");
-  let newButtonid = "bth-holiday";
-
+  novoBotao.id = "btn-holiday";
   novoBotao.innerText = feriado;
-  newButtonid.id = newButtonid;
 
   botao.appendChild(novoBotao);
 }
@@ -62,15 +60,45 @@ function criaBotao(feriado) {
 criaBotao("Feriado");
 
 function alteraCor() {
-  const mudaCor = document.querySelector(".holiday");
-  mudaCor.style.backgroundColor = "rbg(238,238,238)";
-
-  const button = document.getElementById('bth-holiday');
-  button.addEventListener('click', function(){ 
-      for(let index = 0; index < mudaCor.length; index += 1) {
-       mudaCor[index];  
+  const mudaCor = document.querySelectorAll(".holiday");
+  const button = document.getElementById("btn-holiday");
+  button.addEventListener("click", function () {
+    for (let index = 0; index < mudaCor.length; index += 1) {
+      let isColored = mudaCor[index].style.backgroundColor;
+      if (isColored === "lightgreen") {
+        mudaCor[index].style.backgroundColor = "rgb(238,238,238)";
+      } else {
+        mudaCor[index].style.backgroundColor = "lightgreen";
       }
+    }
   });
 }
 alteraCor();
+
+function newButton(sexta) {
+  const filhaButton = document.querySelector(".buttons-container");
+  let buttonFriday = document.createElement("button");
+  buttonFriday.id = "btn-friday";
+  buttonFriday.innerText = sexta;
+
+  filhaButton.appendChild(buttonFriday);
+}
+newButton("Sexta-Feira");
+
+function alteraTexto(mudaTextoArray) {
+  const mudaTexto = document.querySelectorAll(".friday");
+  const botaoSexta = document.getElementById("btn-friday");
+  botaoSexta.addEventListener("click", function () {
+    for (let index = 0; index < mudaTexto.length; index += 1) {
+      let isText = mudaTexto[index].innerText;
+      if (isText === "Sextou") {
+        mudaTexto[index].innerText = mudaTextoArray[index];
+      } else {
+        mudaTexto[index].innerText = "Sextou";
+      }
+    }
+  });
+}
+let voltaSexta = [4, 11, 18, 25];
+alteraTexto(voltaSexta);
 // Escreva seu código abaixo.
