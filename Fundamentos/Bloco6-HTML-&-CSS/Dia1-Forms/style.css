@@ -1,0 +1,93 @@
+body {
+    background-color: #94829b;
+}
+
+#formulario {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efe6f3;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#nome {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#name {
+    height: 20px;
+}
+
+#eMail {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#email {
+    height: 20px;
+}
+
+#destino {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#texto {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#data {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#escolha {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#autorizacao {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+#botoes {
+    text-align: center;
+}
+
+#enviar {
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: gainsboro;
+}
+
+#apagar {
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: gainsboro;
+}
+
+#form {
+    background-color: #efe6f3;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}

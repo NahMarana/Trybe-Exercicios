@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercícios</title>
+</head>
+
+<body>
+    <main>
+        <div id="formulario">
+            <h1>FORMULÁRIO TRYBETRIP</h1>
+        </div>
+       <br>
+        <form action="" method="get" id="form">
+            <br>
+            <div id="nome">
+                <label for="name">Nome:</label>
+                <input type="text" name="nome" id="name" minlength="10" maxlength="40" placeholder="Nome completo" required>
+            </div>
+            <br>
+            <div id="eMail">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" minlength="10" maxlength="50" required>
+            </div>
+            <br>
+            <div id="destino">
+                <h4>Destino Preferido: </h4>
+                <input type="radio" id="city" value="cidade" name="escolha">Cidade
+                <input type="radio" id="fild" value="campo" name="escolha">Campo
+                <input type="radio" id="bech" value="praia" name="escolha">Praia
+                <input type="radio" id="mont" value="montanha" name="escolha">Montanhas
+            </div>
+            <br>
+            <div id="texto">
+                <h4>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h4>
+                <textarea name="" id="text" cols="60" rows="10" placeholder="Digite aqui" required
+                    maxlength="500"></textarea>
+            </div>
+            <div id="data">
+                <h4>Qual a melhor data para realizar sua viagem?</h4>
+                Data: <input type="date">
+            </div>
+            <div id="escolha">
+                <h4>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</h4>
+                <input type="radio" id="yes" value="nao" name="escolha">Sim
+                <input type="radio" id="not" value="nao" name="escolha">Não
+            </div>
+            <br>
+            <div id="autorizacao">
+                <input type="radio" required> Concordo que imagens das minhas férias poderão ser usadas na divulgação de
+                concursos futuros.
+            </div>
+            <br>
+            <div id="botoes">
+                <button id="enviar" type="submit">Enviar</button>
+                <button id="apagar">Apagar</button>
+            </div>
+            <br>
+        </form>
+    </main>
+
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
