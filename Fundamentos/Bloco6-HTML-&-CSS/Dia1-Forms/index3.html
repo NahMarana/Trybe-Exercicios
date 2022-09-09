@@ -38,7 +38,7 @@
             <div id="texto">
                 <h4>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h4>
                 <textarea name="" id="text" cols="60" rows="10" placeholder="Digite aqui" required
-                    maxlength="500"></textarea>
+                    minlength="1" maxlength="500"></textarea>
             </div>
             <div id="data">
                 <h4>Qual a melhor data para realizar sua viagem?</h4>
@@ -46,18 +46,18 @@
             </div>
             <div id="escolha">
                 <h4>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</h4>
-                <input type="radio" id="yes" value="nao" name="escolha">Sim
-                <input type="radio" id="not" value="nao" name="escolha">Não
+                <input type="radio" id="yes" value="nao" name="opcao">Sim
+                <input type="radio" id="not" value="nao" name="opcao">Não
             </div>
             <br>
             <div id="autorizacao">
-                <input type="radio" required> Concordo que imagens das minhas férias poderão ser usadas na divulgação de
+                <input id="aut" type="radio" required> Concordo que imagens das minhas férias poderão ser usadas na divulgação de
                 concursos futuros.
             </div>
             <br>
             <div id="botoes">
                 <button id="enviar" type="submit">Enviar</button>
-                <button id="apagar">Apagar</button>
+                <button id="apagar" type="reset">Apagar</button>
             </div>
             <br>
         </form>
